@@ -28,7 +28,7 @@ public class Connection extends AsyncTask{
     @Override
     protected Object doInBackground(Object[] objects) {
         try {
-            setUrl(new URL("http://87.15.198.248:8000/Server/")); //Server's URL
+            setUrl(new URL("http://IPAddress:8000/Server/")); //Server's URL
             setHttpURLConnection((HttpURLConnection) getUrl().openConnection());
             getHttpURLConnection().setDoOutput(true);
             getHttpURLConnection().setRequestMethod("POST"); //Specify it's a POST request
